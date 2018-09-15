@@ -2213,7 +2213,7 @@ html.no-csstransitions .home-content__main {
  * # about
  *
  * ------------------------------------------------------------------- */
-.s-about, .s-trial {
+.s-about, .s-trial, .s-ways {
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-color: #ffffff;
@@ -2276,7 +2276,7 @@ html.no-csstransitions .home-content__main {
   padding-right: 30px;
 }
 
-.s-trial {
+.s-trial, .s-ways  {
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-color: #ffffff;
@@ -2315,7 +2315,7 @@ html.no-csstransitions .home-content__main {
     padding-right: 0;
   }
 
-  .s-trial {
+  .s-trial,.s-ways  {
     padding-top: 15rem;
     padding-bottom: 15rem;
   }
@@ -2352,7 +2352,7 @@ html.no-csstransitions .home-content__main {
   }
 }
 @media only screen and (max-width: 400px) {
-  .s-about, .s-trial {
+  .s-about, .s-trial, .s-ways  {
     padding-top: 5rem;
   }
 
