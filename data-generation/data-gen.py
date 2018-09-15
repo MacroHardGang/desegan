@@ -18,7 +18,9 @@ def retrieveFaceDesc(image_url):
     data = {"url": image_url}
     response = requests.post(FACE_API_URL, params=params, headers=headers, json=data)
     faces = response.json()
-    return faces[0]
+    if (len(faces) > 0):
+        return faces[0]
+    return None
 
 ''' Create description strings '''
 def createDescString(description):
@@ -56,23 +58,26 @@ def createDescString(description):
 
 image_id = 401
 data = []
-for n in range(1,4):
+for n in range(1,13248):
     image_url = "https://htn.blob.core.windows.net/htn-blob/" + str(n) + ".jpg"
     msft_desc = retrieveFaceDesc(image_url)
-    desc_string = createDescString(msft_desc)
-    desc = {
-            "img_id": image_id,
-            "image": image_url,
-            "descriptions": [
-                {
-                    "desc_id": random.randint(1,10000000000),
-                    "text": desc_string
-                }
-            ]
-        }
-    data.append(desc)
-    image_id = image_id + 1
-    print("Image #" + str(n) + ": " + desc_string)
+    if (msft_desc != None):
+        desc_string = createDescString(msft_desc)
+        desc = {
+                "img_id": image_id,
+                "image": image_url,
+                "descriptions": [
+                    {
+                        "desc_id": random.randint(1,10000000000),
+                        "text": desc_string
+                    }
+                ]
+            }
+        data.append(desc)
+        image_id = image_id + 1
+        print("Image #" + str(n) + ": " + desc_string)
+    else:
+        print("No faces found for image #" + str(n))
 
 with open('data.json', 'w') as outfile:
     json.dump(data, outfile, indent=4)
