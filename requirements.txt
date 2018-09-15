@@ -1,6 +1,5 @@
 flask
-azure
-azure-common
+azure-storage
 random
 # yaml==0.1.7
 # zlib==1.2.11
