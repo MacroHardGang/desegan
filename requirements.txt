@@ -1,6 +1,5 @@
 flask
 azure-storage
-random
 # yaml==0.1.7
 # zlib==1.2.11
 # torchvision==0.2.1
