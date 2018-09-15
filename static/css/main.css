@@ -2910,10 +2910,10 @@ html.no-csstransitions .home-content__main {
 }
 .stats__count {
   font-family: "metropolis-light", sans-serif;
-  font-size: 9.2rem;
+  font-size: 4.6rem;
   line-height: 1;
   color: #ffffff;
-  padding-bottom: 1.8rem;
+  padding-bottom: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -2957,17 +2957,17 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 600px) {
   .stats__count {
-    font-size: 8.4rem;
+    font-size: 3.5rem;
   }
 }
 @media only screen and (max-width: 400px) {
   .s-stats {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .stats__count {
-    font-size: 8.2rem;
+    font-size: 4.5rem;
   }
 }
 

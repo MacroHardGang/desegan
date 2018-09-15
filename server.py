@@ -9,15 +9,12 @@ test_filename = 'tiff_yhack.png'
 
 # Handles POST request from client
 @app.route('/tests/endpoint', methods=['POST'])
-def my_test_endpoint():
-    input_json = request.get_json(force=True) 
-    print ('Client input:', input_json)
-    status = {'Data received': 'Success'}
-    return send_file(test_filepath + test_filename, mimetype='image/png')
+def myTestEndpoint():
+    return "sup"
 
 @app.route('/')
 def index():
-    return 'Good job you went to the landing page wow'
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

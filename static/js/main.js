@@ -7,11 +7,6 @@
 
     "use strict";
     
-    var cfg = {
-        scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
-    },
-
     $WIN = $(window);
 
     // Add the User Agent to the <html>
@@ -346,11 +341,19 @@
         });
     };
 
+    var getData = function() {
+      console.log("lit")
+      // var canvas = document.getElementById("test-img");
+      $.post( "/tests/endpoint", function(err, req, resp){
+        console.log(resp)
+      });
+    };
 
    /* Initialize
     * ------------------------------------------------------ */
     (function clInit() {
         
+        getData();
         clPreloader();
         clMenuOnScrolldown();
         clOffCanvas();
