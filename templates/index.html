@@ -15,9 +15,8 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/vendor.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
     <!-- script
     ================================================== -->
@@ -106,7 +105,7 @@
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead">Who We Are</h3>
-                <h1 class="display-1">We are a group of design driven individuals passionate about creating beautiful UI designs.</h1>
+                <h1 class="display-1">We digitalize the criminal identification drawing.</h1>
             </div>
         </div> <!-- end section-header -->
 
@@ -118,8 +117,11 @@
             </div>
         </div> <!-- end about-desc -->
 
+        <div class="row" data-aos="fade-up"> 
+            <img src="{{ url_for('static', filename='images/crime-graph.png') }}"/>
+        </div>
+
         <div class="row">
-                
             <div class="about-process process block-1-2 block-tab-full">
 
                 <div class="process__vline-left"></div>
