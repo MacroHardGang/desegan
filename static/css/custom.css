@@ -1,5 +1,10 @@
-.crime-graph { 
-    width: 70%;
+.center { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.crime-graph img { 
+    width: 90%;
 }
 
 .footer-text {
@@ -8,5 +13,110 @@
     padding: 1em 0;
     font-size: 15px;
     letter-spacing: 3px;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## display headings
+ * ------------------------------------------------------------------- */
+ .display-2 {
+    font-family: "domine-bold", sans-serif;
+    font-size: 4.5rem;
+    line-height: 1.3;
+    letter-spacing: 0;
+    color: #000000;
+    letter-spacing: -0.03rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .display-2--light {
+    color: #ffffff;
+  }
+  
+  /* ------------------------------------------------------------------- 
+   * responsive:
+   * display headings
+   * ------------------------------------------------------------------- */
+  @media only screen and (max-width: 1400px) {
+    .display-2 {
+      font-size: 4.2rem;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .display-2 {
+      font-size: 4rem;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .display-2 {
+      font-size: 3.6rem;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .display-2 {
+      font-size: 3.2rem;
+      margin-bottom: 3rem;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .display-2 {
+      font-size: 3rem;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .display-2 {
+      font-size: 2.8rem;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .display-2 {
+      font-size: 2.5rem;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .display-2 {
+      font-size: 2.5rem;
+    }
+  }
+
+.trial-area {
+    position:relative;
+}
+
+.trial-area textarea {
+    height: 250px;
+    width: 70%;
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 15px;
+    resize: none;
+    margin: auto;
+    margin-left: 80px;
+    display: inline-block;
+}
+
+#submit {
+    border-radius: 15px;
+    border: 0px;
+    color: white;
+    background-color: #cc147f;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    bottom: 0;
+    position: absolute;
+    float: left;
+    display: inline-block;
+}
+
+#query-result { 
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 15px;
+    background-image: url("../images/avatar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
