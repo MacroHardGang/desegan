@@ -110,8 +110,8 @@
 
 #query-result { 
     margin: auto;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     padding: 10px;
     border-radius: 15px;
     background-image: url("../images/avatar.png");
