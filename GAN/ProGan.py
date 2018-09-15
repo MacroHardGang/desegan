@@ -290,7 +290,7 @@ class ProGAN:
     def __init__(self, depth=7, latent_size=512, learning_rate=0.001, beta_1=0,
                  beta_2=0.99, eps=1e-8, drift=0.001, n_critic=1, use_eql=True,
                  loss="wgan-gp", use_ema=True, ema_decay=0.999,
-                 device=th.device("cpu")):
+                 device=th.device("gpu")):
         """
         constructor for the class
         :param depth: depth of the GAN (will be used for each generator and discriminator)
@@ -460,7 +460,7 @@ class ConditionalProGAN:
                  learning_rate=0.001, beta_1=0, beta_2=0.99,
                  eps=1e-8, drift=0.001, n_critic=1, use_eql=True,
                  loss="wgan-gp", use_ema=True, ema_decay=0.999,
-                 device=th.device("cpu")):
+                 device=th.device("gpu")):
         """
         constructor for the class
         :param embedding_size: size of the encoded text embeddings
