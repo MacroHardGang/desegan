@@ -20,7 +20,7 @@ def parse_arguments():
     :return: args => parsed command line arguments
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config", action="store", type=str, default="configs/1.conf",
+    parser.add_argument("--config", action="store", type=str, default="configs/2.conf",
                         help="default configuration for the Network")
     parser.add_argument("--start_depth", action="store", type=int, default=0,
                         help="Starting depth for training the network")
