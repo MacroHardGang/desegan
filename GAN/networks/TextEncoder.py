@@ -61,7 +61,7 @@ class PretrainedEncoder:
         :param download: Boolean for whether to download
         """
         if module_dir is None:
-            module_dir = "~/.tensorflow_hub_modules/text_encoder"
+            module_dir = "https://tfhub.dev/google/universal-sentence-encoder/2"
 
         self.download_path = \
             "https://tfhub.dev/google/universal-sentence-encoder/2"
