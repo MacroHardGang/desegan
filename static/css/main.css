@@ -617,7 +617,6 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  display: block;
   height: 6rem;
   padding: 1.5rem 2.4rem;
   border: 0;
@@ -627,7 +626,7 @@ select {
   font-size: 1.5rem;
   line-height: 3rem;
   max-width: 100%;
-  background: rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.08);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1837,7 +1836,7 @@ input::-moz-focus-inner {
   height: 4.8rem;
   width: 4.8rem;
   background-color: #ffffff;
-  background-image: url(../images/arrow-down.png);
+  background-image: url(../images/icon-arrow-down.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 10px 15px;
@@ -2214,9 +2213,9 @@ html.no-csstransitions .home-content__main {
  * # about
  *
  * ------------------------------------------------------------------- */
-.s-about {
-  padding-top: 18rem;
-  padding-bottom: 18rem;
+.s-about, .s-trial, .s-ways {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   background-color: #ffffff;
   position: relative;
 }
@@ -2277,15 +2276,22 @@ html.no-csstransitions .home-content__main {
   padding-right: 30px;
 }
 
+.s-trial, .s-ways  {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #ffffff;
+  position: relative;
+}
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
  * about
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-  .s-about {
-    padding-top: 15rem;
-    padding-bottom: 15rem;
+  .s-about, .s-trial {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .process__vline-left {
@@ -2308,11 +2314,16 @@ html.no-csstransitions .home-content__main {
     margin-left: 6.8rem;
     padding-right: 0;
   }
+
+  .s-trial,.s-ways  {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
 }
 @media only screen and (max-width: 800px) {
-  .s-about {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+  .s-about, .s-trial {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .process {
@@ -2341,8 +2352,8 @@ html.no-csstransitions .home-content__main {
   }
 }
 @media only screen and (max-width: 400px) {
-  .s-about {
-    padding-top: 9.6rem;
+  .s-about, .s-trial, .s-ways  {
+    padding-top: 5rem;
   }
 
   .process h4 {
@@ -2876,8 +2887,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-stats {
-  padding-top: 4.2rem;
-  padding-bottom: 4.2rem;
+  padding-top: 2.3rem;
+  padding-bottom: 2.3rem;
   background-color: #050505;
   background-image: url(../images/stats-bg.jpg);
   background-repeat: no-repeat;
@@ -2910,10 +2921,10 @@ html.no-csstransitions .home-content__main {
 }
 .stats__count {
   font-family: "metropolis-light", sans-serif;
-  font-size: 9.2rem;
+  font-size: 7.6rem;
   line-height: 1;
   color: #ffffff;
-  padding-bottom: 1.8rem;
+  padding-bottom: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -2957,17 +2968,17 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 600px) {
   .stats__count {
-    font-size: 8.4rem;
+    font-size: 3.5rem;
   }
 }
 @media only screen and (max-width: 400px) {
   .s-stats {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .stats__count {
-    font-size: 8.2rem;
+    font-size: 4.5rem;
   }
 }
 
