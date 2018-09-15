@@ -1,4 +1,3 @@
-import os
 import os, uuid, sys
 from azure.storage.blob import BlockBlobService, PublicAccess
 
