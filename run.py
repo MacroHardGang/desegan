@@ -6,10 +6,12 @@ ACCOUNT_KEY = 'Wa6X+0mdj74FBEPczVimdRzj6Z7KDsUHKPckyP0UdGWpZRjbJuERLR8T/JJIpNBOx
 CONTAINER_NAME = 'generated-images'
 IMAGE_LOCAL_URL = 'data-generation/images/1.jpg'
 
+''' Queries the model which generate a photo and saves it to the output folder'''
 def queryModel(description):
     # Run model
     print("Running model")
 
+''' Uploads the image to blob storage '''
 def uploadImage():
     uuid = str(random.randint(1,100000000))
     try:
@@ -21,9 +23,8 @@ def uploadImage():
     print("Image uploaded to "+ url)
     return url
 
+''' Generates the potential look of the criminal '''
 def generateCriminal(description):
     queryModel(description)
     image_url = uploadImage()
     return image_url
-
-generateCriminal("Test")
