@@ -5,6 +5,7 @@ function getData() {
         if (this.readyState == 4 && this.status == 200) {
            // Typical action to be performed when the document is ready:
            var res = JSON.parse(this.response);
+           console.log(res.image_url);
            document.getElementById('query-result').style.backgroundImage = "url(" + res.image_url + ")";
         }
     };
