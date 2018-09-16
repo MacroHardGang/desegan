@@ -4,7 +4,7 @@ import random
 ACCOUNT_NAME = 'htn'
 ACCOUNT_KEY = 'Wa6X+0mdj74FBEPczVimdRzj6Z7KDsUHKPckyP0UdGWpZRjbJuERLR8T/JJIpNBOxZA+Q+5aSmx1xYM/HmTLqQ=='
 CONTAINER_NAME = 'generated-images'
-IMAGE_LOCAL_URL = 'data-generation/images/1.jpg'
+IMAGE_LOCAL_URL = 'output/1.jpg'
 
 ''' Queries the model which generate a photo and saves it to the output folder'''
 def queryModel(description):
@@ -19,6 +19,7 @@ def uploadImage():
         block_blob_service.create_blob_from_path(CONTAINER_NAME, uuid + '.jpg', IMAGE_LOCAL_URL)
     except Exception as e:
         print(e)
+
     url = 'https://htn.blob.core.windows.net/generated-images/' + uuid + '.jpg'
     print("Image uploaded to "+ url)
     return url
